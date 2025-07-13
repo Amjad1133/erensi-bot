@@ -4,7 +4,8 @@ import { ConvexReactClient } from "convex/react";
 import "./index.css";
 import App from "./App";
 
-const convex = new ConvexReactClient(import.meta.env.VITE_CONVEX_URL as string);
+// ✅ رابط وهمي فقط للتجربة
+const convex = new ConvexReactClient("https://dummy.convex.cloud");
 
 createRoot(document.getElementById("root")!).render(
   <ConvexAuthProvider client={convex}>
